@@ -34,3 +34,22 @@ CREATE TABLE SecurityAudits (
     FOREIGN KEY (employee_id) REFERENCES Employees(id),
     FOREIGN KEY (system_id) REFERENCES Systems(id)
 );
+-- VULNERABILITIES DETECTED
+CREATE TABLE VulnerabilitiesDetected (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    audit_id INT,
+    system_id INT,
+    severity VARCHAR(255),
+    status VARCHAR(255),
+    FOREIGN KEY (audit_id) REFERENCES SecurityAudits(id),
+    FOREIGN KEY (system_id) REFERENCES Systems(id)
+);
+-- DEPARTMENT TABLE
+CREATE TABLE Department (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    manager_id INT,
+    type VARCHAR(255),
+    status VARCHAR(255),
+    location VARCHAR(255),
+    FOREIGN KEY (manager_id) REFERENCES Employees(id)
+);
