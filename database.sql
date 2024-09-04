@@ -53,3 +53,4 @@ CREATE TABLE Department (
     location VARCHAR(255),
     FOREIGN KEY (manager_id) REFERENCES Employees(id)
 );
+--INSERT DATA HERE
