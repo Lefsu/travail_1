@@ -1,3 +1,5 @@
+# LEFEVRE Sullivan - MOREAU Guy-Loup
+
 import mysql.connector
 from faker import Faker
 import random

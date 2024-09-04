@@ -1,4 +1,5 @@
 ## Generation Data
+# LEFEVRE Sullivan - MOREAU Guy-Loup
 
 For using it you have to install some imports.
 <code>$ pip install -r requirements.txt</code>

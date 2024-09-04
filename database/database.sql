@@ -1,4 +1,5 @@
 -- DATABASE FOR MANAGING SECURITY AUDITS
+-- LEFEVRE Sullivan - MOREAU Guy-Loup
 --Employees (id(PK), last name, first name, position, department_id(FK))
 --Systems (id(PK), name, type, department_id(FK), manager_id(FK))
 --Security Audits (id(PK), date, status, employee_id(FK), system_id(FK))
